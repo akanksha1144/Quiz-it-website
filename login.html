@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">QuizIt!</a>
+        </header>
+        <main class="main">
+            <div class="container active">
+                <h2>SIGN UP</h2>
+                <form action="login.php" method="post"> 
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Your username.." required>
+    
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Your password.." required pattern=".{5,}" title="Password must be at least 5 characters long">
+    
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password.." required>
+    
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </main>
+</body>
+</html>
